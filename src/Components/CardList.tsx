@@ -26,7 +26,10 @@ export const CardList = ({
             return <Card card={card} cards={cards} setCards={setCards} />;
           })
         ) : (
-          <p className="min-w-[150px] h-[176px]">No cards to display.</p>
+          <p className="bg-[#cfddbcff] min-w-[150px] p-4 h-fit border-[5px] border-[#9da68cff]">
+            <span className="material-symbols-outlined ">error</span> No cards
+            to display.
+          </p>
         )}
       </section>
     </section>
