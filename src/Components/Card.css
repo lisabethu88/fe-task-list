@@ -1,0 +1,20 @@
+.card p {
+  font-family: "Patrick Hand";
+  /* overflow-wrap: break-word; */
+  hyphens: auto;
+  font-size: 1.5rem;
+}
+
+.card {
+  background-image: url("../images/post-it.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: fit-content;
+  width: 300px;
+  height: 300px;
+  justify-content: center;
+  padding: 25px 25px 0 25px;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 0;
+}

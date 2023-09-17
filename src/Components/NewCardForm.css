@@ -1,0 +1,32 @@
+#create-card {
+  /* border-radius: 25px; */
+  background-image: url("../images/stack.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#create-card form {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 75px;
+  left: 10px;
+  font-size: 1.25rem;
+}
+
+#create-card form textarea {
+  border-radius: 25px;
+  width: 300px;
+  height: 100px;
+  resize: none;
+  padding: 5px;
+}
+
+#create-card h2 {
+  color: rgb(123, 130, 110);
+  padding: 10px;
+}

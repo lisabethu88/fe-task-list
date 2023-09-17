@@ -1,38 +1,159 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Koulen&family=Montserrat:wght@400;500;700&family=Patrick+Hand&family=Reenie+Beanie&display=swap");
+html {
+  background-image: url("./images/Untitled design (43).png");
+  background-size: cover;
+  background-attachment: fixed;
+  /* background-color: rgb(67, 81, 61); */
+  width: fit-content;
+}
+
+body {
+  font-family: "Montserrat";
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #59595bff;
+}
+
 .App {
-  text-align: center;
+  width: fit-content;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board-container section,
+.App-header {
+  background-color: #337d6dff;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: sticky;
+  top: 0; /* Adjust this value to determine when the header becomes sticky */
+  padding: 10px;
+  color: rgb(255, 255, 255); /* Adjust the text color as needed */
+  z-index: 100;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  /* border-bottom: 5px solid rgb(165, 197, 168); */
+  /* -webkit-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 10px -6px rgba(63, 84, 49, 0.75); */
+  background-size: auto;
+  background-repeat: repeat;
+  width: 100%;
+  border-bottom: 5px solid rgba(46, 113, 99, 0.539);
+}
+
+.App-header li a:hover {
+  color: rgb(253, 225, 66);
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100%;
+  background-color: rgb(59, 131, 116);
+  color: rgb(128, 198, 174);
+  padding: 100px;
+  min-width: 1120px;
+  border-bottom: 5px solid rgba(46, 113, 99, 0.539);
+}
+.bulb {
+  width: 200px;
+  margin: 0 auto;
+  min-width: 100px;
+}
+@media screen and (max-width: 1120px) {
+  .board-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+  }
+
+  .bulb {
+    display: none;
+  }
+  .board-container section {
+    margin: 25px auto !important;
+  }
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  /* background-color: #2e3d4195; */
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0px;
+}
+.board-container section {
+  border: 5px solid rgba(46, 113, 99, 0.539);
+  text-align: center;
+  margin: 0 25px;
+  height: fit-content;
+  border-radius: 25px;
+  padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  min-height: 365px;
+}
+
+.input {
+  color: black;
+  border-radius: 15px;
+  /* -webkit-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset; */
+}
+
+.selected-board {
+  font-size: 3rem;
+}
+
+#create-card button,
+#create-board button,
+.get-started-button {
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 10px;
+}
+#create-board button {
+  color: rgb(58, 110, 99);
+  background-color: rgb(155, 195, 183) !important;
+  border: 3px solid rgb(110, 152, 143);
+}
+#create-card button {
+  color: rgba(89, 89, 91, 0.699);
+  background-color: rgb(237, 232, 221) !important;
+  border: 3px solid rgb(175, 185, 156);
+}
+
+#create-card button:hover {
+  border: 3px solid rgb(114, 122, 97);
+  color: rgb(225, 229, 222) !important;
+  background-color: rgba(89, 89, 91, 0.794) !important;
+}
+#create-board button:hover {
+  background-color: rgb(58, 110, 99) !important;
+  color: rgb(155, 195, 183) !important;
+  border: 3px solid rgb(58, 110, 99);
+}
+
+.get-started-button {
   color: white;
+  background-color: rgb(85, 148, 126) !important;
+  border: 3px solid rgba(50, 91, 71, 0.147);
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.get-started-button:hover {
+  background-color: rgb(255, 208, 55) !important;
+  border: 3px solid rgb(251, 200, 34);
 }

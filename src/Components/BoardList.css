@@ -1,0 +1,21 @@
+.list-group {
+  background-color: white;
+  width: 75%;
+  margin: 25px auto;
+  min-width: 200px;
+  border-radius: 15px;
+  /* -webkit-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset;
+  box-shadow: 5px 5px 10px -6px rgba(0, 0, 0, 0.75) inset; */
+}
+
+.list-group-item {
+  text-align: left;
+  color: black;
+  padding: 10px;
+}
+
+.active {
+  background-color: #ffd32bff !important;
+  color: white;
+}
